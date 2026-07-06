@@ -10,6 +10,9 @@ default_dirs:
     - global: ~/.claude/commands/
 
 library:
-  skills: []
+  skills:
+    - name: planf3
+      description: Creates a concise engineering implementation plan based on user requirements and saves it to specs directory
+      source: https://github.com/disler/planf3/blob/main/.claude/skills/planf3/SKILL.md
   agents: []
   prompts: []
