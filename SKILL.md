@@ -64,6 +64,13 @@ Both GitHub URL formats are supported. Parse org, repo, branch, and file path fr
 
 **Important:** The source points to a specific file (SKILL.md, AGENT.md, or prompt file). We always pull the entire parent directory, not just the file.
 
+### Vault-Sourced Entries
+
+Agentics distilled in the second brain (`~/obsidian/00_max-vault`) can be cataloged with the local-path format. Two rules:
+
+- **One item per subdirectory.** Because pulls copy the *parent directory* of the source file, a vault-sourced entry must live in its own subdirectory — e.g. `source: ~/obsidian/00_max-vault/wiki/agentics/<name>/<name>.md`. Never point at a flat `wiki/<page>.md`, or a pull would copy the entire wiki.
+- **Reindex after adding.** After creating or editing vault-sourced agentics, run `qmd update && qmd embed` so vault search stays current.
+
 ## Source Parsing Rules
 
 **Local paths** start with `/` or `~`:
