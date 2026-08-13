@@ -2,6 +2,10 @@ default_dirs:
   skills:
     - default: .claude/skills/
     - global: ~/.claude/skills/
+
+    - name: media-extract
+      description: Universal media extraction. YouTube transcripts+metadata (yt-dlp, free), web articles (WebFetch), local files, pasted transcripts. Produces structured summaries, golden nuggets, chapters, quotes, workflows, commands, breakdowns. Use for a YouTube/article URL, a transcript, or "extract/summarize this content".
+      source: https://github.com/alexadark/media-extract-skill/blob/main/SKILL.md
   agents:
     - default: .claude/agents/
     - global: ~/.claude/agents/
@@ -14,5 +18,13 @@ library:
     - name: planf3
       description: Creates a concise engineering implementation plan based on user requirements and saves it to specs directory
       source: https://github.com/principal-and-agent/planf3/blob/main/.claude/skills/planf3/SKILL.md
+
+    - name: tdd
+      description: Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions "red-green-refactor", or wants integration tests.
+      source: ~/.claude/skills/tdd/SKILL.md
+
+    - name: doubt-driven-development
+      description: Subjects every non-trivial decision to a fresh-context adversarial review before it stands. Use when correctness matters more than speed, when working in unfamiliar code, when stakes are high (production, security-sensitive logic, irreversible operations), or any time a confident output would be cheaper to verify now than to debug later.
+      source: ~/.claude/skills/doubt-driven-development/SKILL.md
   agents: []
   prompts: []
