@@ -3,6 +3,10 @@ default_dirs:
     - default: .claude/skills/
     - global: ~/.claude/skills/
 
+    - name: excalidraw-board
+      description: Build an editable Excalidraw diagram or multi-panel explainer board from a JSON spec, using free community icon libraries. No image generation, no API keys, no cost. Use for architecture, flow, sequence, or layered diagrams.
+      source: https://github.com/afrozahmad07/excalidraw-board/blob/main/SKILL.md
+
   agents:
     - default: .claude/agents/
     - global: ~/.claude/agents/
