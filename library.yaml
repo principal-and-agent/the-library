@@ -31,6 +31,10 @@ library:
     - name: doubt-driven-development
       description: Subjects every non-trivial decision to a fresh-context adversarial review before it stands. Use when correctness matters more than speed, when working in unfamiliar code, when stakes are high (production, security-sensitive logic, irreversible operations), or any time a confident output would be cheaper to verify now than to debug later.
       source: ~/.claude/skills/doubt-driven-development/SKILL.md
+    - name: loops
+      description: P&A saved loop library (7 bounded agent loops with checks, stop rules, approval gates, run receipts). Use for /loops or when asking for a repeatable loop.
+      source: https://github.com/principal-and-agent/the-library/blob/main/skills/loops/SKILL.md
+
     - name: media-extract
       description: Universal media extraction. YouTube transcripts+metadata (yt-dlp, free), web articles (WebFetch), local files, pasted transcripts. Produces structured summaries, golden nuggets, chapters, quotes, workflows, commands, breakdowns. Use for a YouTube/article URL, a transcript, or "extract/summarize this content".
       source: https://github.com/alexadark/media-extract-skill/blob/main/SKILL.md
